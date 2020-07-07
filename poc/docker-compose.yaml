@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+  php7:
+    image: library/php:7-cli-alpine
+    volumes:
+    - ./:/code
+    working_dir: /code
+  php8:
+    build:
+      context: .
+    volumes:
+    - ./:/code
+    working_dir: /code
