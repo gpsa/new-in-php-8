@@ -8,7 +8,7 @@ services:
   php8:
     image: gpsa/php:8.0.0alpha2
     build:
-      context: ../docker
+      context: .
       args:
         NAME_BASE: alpine
         NAME_TAG: latest
