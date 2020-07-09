@@ -1,0 +1,3 @@
+[submodule "docker"]
+	path = docker
+	url = git@github.com:gpsa/Dockerfile_of_PHP8-JIT.git

@@ -6,8 +6,12 @@ services:
     - ./:/code
     working_dir: /code
   php8:
+    image: gpsa/php:8.0.0alpha2
     build:
-      context: .
+      context: ../docker
+      args:
+        NAME_BASE: alpine
+        NAME_TAG: latest
     volumes:
     - ./:/code
     working_dir: /code
